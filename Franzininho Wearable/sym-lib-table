@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name Franzininho-Wearable-rescue)(type Legacy)(uri "${KIPRJMOD}/Franzininho Wearable-rescue.lib")(options "")(descr ""))
+  (lib (name ICL7660SCPAZ)(type Legacy)(uri ${KIPRJMOD}/LIBS/ICL7660SCPAZ.lib)(options "")(descr ""))
+  (lib (name LM324N_NOPB)(type Legacy)(uri ${KIPRJMOD}/LIBS/LM324N_NOPB.lib)(options "")(descr ""))
 )
