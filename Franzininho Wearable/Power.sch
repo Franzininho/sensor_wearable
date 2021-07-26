@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Wearable Sensor"
+Date ""
+Rev ""
+Comp "Franzininho"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Franzininho-Wearable-rescue:CP1-Device C?
+U 1 1 60FF9720
+P 4950 3850
+AR Path="/60FF9720" Ref="C?"  Part="1" 
+AR Path="/60FED1B2/60FF9720" Ref="C11"  Part="1" 
+F 0 "C11" H 4650 3900 50  0000 L CNN
+F 1 "10u" H 4650 3800 50  0000 L CNN
+F 2 "" H 4950 3850 50  0001 C CNN
+F 3 "~" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 3950
+NoConn ~ 5450 3550
+NoConn ~ 5450 4150
+$Comp
+L Franzininho-Wearable-rescue:CP1-Device C?
+U 1 1 60FF9732
+P 7000 3600
+AR Path="/60FF9732" Ref="C?"  Part="1" 
+AR Path="/60FED1B2/60FF9732" Ref="C4"  Part="1" 
+F 0 "C4" H 7115 3646 50  0000 L CNN
+F 1 "10u" H 7115 3555 50  0000 L CNN
+F 2 "" H 7000 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3750 5250 3750
+Wire Wire Line
+	5250 3750 5250 3650
+Wire Wire Line
+	5250 3650 4950 3650
+Wire Wire Line
+	4950 3650 4950 3700
+Wire Wire Line
+	5450 3850 5250 3850
+Wire Wire Line
+	5250 3850 5250 4050
+Wire Wire Line
+	5250 4050 4950 4050
+Wire Wire Line
+	4950 4050 4950 4000
+$Comp
+L Franzininho-Wearable-rescue:C_Small-Device C2
+U 1 1 60FF9747
+P 2400 3050
+F 0 "C2" H 2492 3096 50  0000 L CNN
+F 1 "100n" H 2492 3005 50  0000 L CNN
+F 2 "" H 2400 3050 50  0001 C CNN
+F 3 "~" H 2400 3050 50  0001 C CNN
+	1    2400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Franzininho-Wearable-rescue:C_Small-Device C3
+U 1 1 60FF974D
+P 2900 3050
+F 0 "C3" H 2992 3096 50  0000 L CNN
+F 1 "100n" H 2992 3005 50  0000 L CNN
+F 2 "" H 2900 3050 50  0001 C CNN
+F 3 "~" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2800 2400 2950
+Text HLabel 2850 2800 0    50   Output ~ 0
+-BATT
+Wire Wire Line
+	2900 2800 2900 2950
+Wire Wire Line
+	2300 3300 2400 3300
+Wire Wire Line
+	2900 3150 2900 3300
+Wire Wire Line
+	2400 3150 2400 3300
+Connection ~ 2400 3300
+Wire Wire Line
+	2400 3300 2900 3300
+Wire Wire Line
+	2350 2800 2400 2800
+Wire Wire Line
+	2850 2800 2900 2800
+Text HLabel 5350 3350 0    50   Output ~ 0
++BATT
+Text HLabel 7150 3350 2    50   Output ~ 0
+-BATT
+$Comp
+L ICL7660SCPAZ:ICL7660SCPAZ U1
+U 1 1 60FF976F
+P 6150 3750
+F 0 "U1" H 6150 4520 50  0000 C CNN
+F 1 "ICL7660SCPAZ" H 6150 4429 50  0000 C CNN
+F 2 "DIP254P762X533-8" H 6150 3750 50  0001 L BNN
+F 3 "" H 6150 3750 50  0001 L BNN
+F 4 "INTERSIL" H 6150 3750 50  0001 L BNN "SUPPLIER"
+F 5 "ICL7660SCPAZ" H 6150 3750 50  0001 L BNN "MPN"
+F 6 "9663711" H 6150 3750 50  0001 L BNN "OC_FARNELL"
+F 7 "57K3890" H 6150 3750 50  0001 L BNN "OC_NEWARK"
+F 8 "PDIP-8" H 6150 3750 50  0001 L BNN "PACKAGE"
+	1    6150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3350 5450 3350
+Text HLabel 5350 4350 0    50   Output ~ 0
+GND
+Wire Wire Line
+	5350 4350 5450 4350
+Wire Wire Line
+	7150 3350 7000 3350
+Wire Wire Line
+	7000 3450 7000 3350
+Connection ~ 7000 3350
+Wire Wire Line
+	7000 3350 6850 3350
+Text HLabel 2350 2800 0    50   Output ~ 0
++BATT
+Text HLabel 2300 3300 0    50   Output ~ 0
+GND
+Text HLabel 7100 3850 2    50   Output ~ 0
+GND
+Wire Wire Line
+	7100 3850 7000 3850
+Wire Wire Line
+	7000 3750 7000 3850
+Connection ~ 2400 2800
+Wire Wire Line
+	2400 2750 2400 2800
+Connection ~ 2900 2800
+Wire Wire Line
+	2900 2750 2900 2800
+$Comp
+L Franzininho-Wearable-rescue:PWR #PWR?
+U 1 1 61067E48
+P 2400 2750
+AR Path="/61067E48" Ref="#PWR?"  Part="1" 
+AR Path="/60FED1B2/61067E48" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 2400 2600 50  0001 C CNN
+F 1 "PWR" H 2415 2923 50  0001 C CNN
+F 2 "" H 2400 2750 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Franzininho-Wearable-rescue:PWR #PWR?
+U 1 1 6106783D
+P 2900 2750
+AR Path="/6106783D" Ref="#PWR?"  Part="1" 
+AR Path="/60FED1B2/6106783D" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 2900 2600 50  0001 C CNN
+F 1 "PWR" H 2915 2923 50  0001 C CNN
+F 2 "" H 2900 2750 50  0001 C CNN
+F 3 "" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
